@@ -6,6 +6,5 @@ To research about React Native Expo's features
 
 - To research about Expo router
 - To research about view transition effect using Expo
-- To research about Tailwindcss in React Native
 - To research about authentication integrating with Supabase
 - To research about animation in React Native
