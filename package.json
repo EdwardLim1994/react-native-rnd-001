@@ -9,6 +9,8 @@
     "web": "expo start -c --web --host tunnel --port 8085"
   },
   "dependencies": {
+    "@emotion/native": "^11.11.0",
+    "@emotion/react": "^11.14.0",
     "@preact/signals-react": "^3.3.0",
     "expo": "~54.0.7",
     "expo-constants": "~18.0.9",
