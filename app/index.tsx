@@ -1,5 +1,5 @@
 import { useRouter } from "expo-router";
-import { Button } from "../components/Button";
+import { View, Text } from "react-native";
 
 export default function MainPage() {
   const router = useRouter();
@@ -8,5 +8,9 @@ export default function MainPage() {
     router.push("/profile");
   }
 
-  return <Button text="Profile" onPress={onNavigateToProfile} />;
+  return (
+    <View>
+      <Text className="text-xl font-extrabold">Hello world</Text>
+    </View>
+  );
 }

@@ -1,7 +1,10 @@
-import { Slot, Stack } from "expo-router";
+import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { signal, effect } from "@preact/signals-react";
 import { View, Text } from "react-native";
+
+import { GluestackUIProvider } from "@/components/ui/gluestack-ui-provider";
+import "@/global.css";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -28,9 +31,11 @@ export default function MainLayout() {
 
   if (!isAppReady.value && isLoading.value) {
     return (
-      <View>
-        <Text>Loading...</Text>
-      </View>
+      <GluestackUIProvider mode="dark">
+        <View>
+          <Text>Loading...</Text>
+        </View>
+      </GluestackUIProvider>
     );
   }
 
